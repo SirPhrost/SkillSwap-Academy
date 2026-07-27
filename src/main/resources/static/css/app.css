@@ -1,0 +1,83 @@
+:root {
+    --ss-primary: #5b43d6;
+    --ss-dark: #17152b;
+    --ss-soft: #f4f2ff;
+}
+
+body {
+    background: #f8f9fc;
+    color: #25233a;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--ss-dark), #4635aa);
+    color: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.hero-badge,
+.soft-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: .4rem .75rem;
+    border-radius: 999px;
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+.hero-badge { background: rgba(255,255,255,.14); color: white; }
+.soft-badge { background: var(--ss-soft); color: var(--ss-primary); }
+
+.btn-primary {
+    background-color: var(--ss-primary);
+    border-color: var(--ss-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #4932c2;
+    border-color: #4932c2;
+}
+
+.text-primary { color: var(--ss-primary) !important; }
+
+.card {
+    border: 0;
+    border-radius: 1rem;
+}
+
+.workshop-card {
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.workshop-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 2rem rgba(28, 24, 70, .10) !important;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.4rem;
+    height: 100%;
+}
+
+.form-control,
+.form-select {
+    border-radius: .75rem;
+    padding: .7rem .85rem;
+}
+
+.table > :not(caption) > * > * {
+    vertical-align: middle;
+}
+
+footer {
+    color: #6d6984;
+}
