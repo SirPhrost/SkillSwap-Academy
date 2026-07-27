@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: ${QA_DB_URL:jdbc:postgresql://localhost:5433/verificationdb}
+    driver-class-name: org.postgresql.Driver
+    username: ${QA_DB_USERNAME:skillswap}
+    password: ${QA_DB_PASSWORD:skillswap}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
+    open-in-view: false
+  sql:
+    init:
+      mode: always
+      data-locations: classpath:data-qa.sql
